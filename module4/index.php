@@ -86,5 +86,57 @@ function callCounter(){
 
 callCounter(); //count=1
 callCounter();
+echo "<br>";
+echo "<br>";
+echo "<br>";
  
+
+
+//Arrays
+
+//$sports = array("football", "voleyball", "basketball", "tennis");
+$sports = ["football", "voleyball", "basketball", "tennis", "handball", "running"];
+
+echo $sports [0];
+echo "<br>";
+echo end ($sports);
+echo "<br>";
+echo count($sports);
+echo "<br>";
+
+array_push($sports, "skiing");
+array_unshift($sports, "golf");
+
+echo "<br>";
+echo count($sports);
+echo "<br>";
+
+
+for($i=0; $i<8; $i++){
+   echo $sports[$i]  . " ";
+   
+}
+
+array_shift($sports); // - removes the first item
+array_pop($sports);  //- removes the last item
+echo "<br>";
+echo "<br>";
+for($i=0; $i<6; $i++){
+   echo $sports[$i]  . " ";
+   
+}
+
+echo "<br>";
+var_dump($sports);
+
+
+$output1 = array_slice($sports,2);
+$output2 = array_slice($sports,0,3);
+echo "<br>";
+var_dump($output1);
+echo "<br>";
+var_dump($output2);
+
+
 ?>
+
